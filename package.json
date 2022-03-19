@@ -1,0 +1,39 @@
+{
+    "name": "@cfxjs/use-wallet-enhance",
+    "version": "0.0.3",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "/dist"
+    ],
+    "scripts": {
+        "dev": "vite",
+        "build:lib": "vite build --config vite-lib.config.ts && cp -r ./src/ethereum ./dist"
+    },
+    "peerDependencies": {
+        "@cfxjs/use-wallet": "^0.0.18",
+        "decimal.js": "^10.3.1",
+        "js-conflux-sdk": "^2.0.4",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "devDependencies": {
+        "@cfxjs/use-wallet": "^0.0.18",
+        "@esbuild-plugins/node-globals-polyfill": "^0.1.1",
+        "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
+        "@fluent-wallet/account": "^0.1.0",
+        "@fluent-wallet/base32-address": "^0.1.1",
+        "@types/react": "^17.0.40",
+        "@types/react-dom": "^17.0.13",
+        "@vitejs/plugin-react": "^1.2.0",
+        "decimal.js": "^10.3.1",
+        "js-conflux-sdk": "^2.0.4",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "rollup-plugin-typescript2": "^0.31.2",
+        "rollup-plugin-visualizer": "^5.6.0",
+        "typescript": "^4.6.2",
+        "vite": "^2.8.6"
+    }
+}
